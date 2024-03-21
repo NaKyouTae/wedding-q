@@ -13,7 +13,7 @@ const Account = () => {
                         <li>나성원</li>
                     </ul>
                     <div>
-                        <a onClick={() => onCopy('100050558487')}>계좌 복사하기</a>
+                        <a onClick={() => onCopy('3521399179523')}>계좌 복사하기</a>
                     </div>
                 </li>
                 <li>
@@ -22,7 +22,7 @@ const Account = () => {
                         <li>성춘희</li>
                     </ul>
                     <div>
-                        <a onClick={() => onCopy('100022989148')}>계좌 복사하기</a>
+                        <a onClick={() => onCopy('110393499231')}>계좌 복사하기</a>
                     </div>
                 </li>
                 {/* <li>
