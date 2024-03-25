@@ -1,0 +1,14 @@
+[debug] [2024-03-25T13:33:46.938Z] ----------------------------------------------------------------------
+[debug] [2024-03-25T13:33:46.939Z] Command:       /Users/kyutaena/.nvm/versions/node/v18.17.0/bin/node /Users/kyutaena/.nvm/versions/node/v18.17.0/bin/firebase deploy
+[debug] [2024-03-25T13:33:46.939Z] CLI Version:   13.1.0
+[debug] [2024-03-25T13:33:46.940Z] Platform:      darwin
+[debug] [2024-03-25T13:33:46.940Z] Node Version:  v18.17.0
+[debug] [2024-03-25T13:33:46.940Z] Time:          Mon Mar 25 2024 22:33:46 GMT+0900 (Korean Standard Time)
+[debug] [2024-03-25T13:33:46.940Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-25T13:33:46.970Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-25T13:33:46.970Z] > authorizing via signed-in user (kyoutae93@gmail.com)
+[debug] [2024-03-25T13:33:46.970Z] [iam] checking project wedding-q for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-25T13:33:46.971Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/wedding-q:testIamPermissions [none]
+[debug] [2024-03-25T13:33:46.971Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/wedding-q:testIamPermissions x-goog-quota-user=projects/wedding-q
+[debug] [2024-03-25T13:33:46.971Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wedding-q:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
