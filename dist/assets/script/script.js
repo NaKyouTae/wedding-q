@@ -161,17 +161,17 @@ function onShareKakao() {
         objectType: 'feed',
         content: {
             title: '나규태 ♡ 최보영 결혼합니다.',
-            imageUrl: ' https://firebasestorage.googleapis.com/v0/b/wedding-9b3cb.appspot.com/o/thumbnail01.png?alt=media&token=68a706bb-fb80-44f9-beb6-4f11d940abaf', // 메인 이미지
+            imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wedding-9b3cb.appspot.com/o/parent_thumbnail02.png?alt=media&token=9bb604be-33c2-4ca3-b8ef-dc238ec73a8f', // 메인 이미지
             description: '5/18(토) 13:20 루이비스 중구',
             link: {
-                mobileWebUrl: 'https://저희결혼합니다.com',
+                mobileWebUrl: 'https://아들장가갑니다.com',
             },
         },
         buttons: [
             {
                 title: '청첩장으로 이동',
                 link: {
-                    mobileWebUrl: 'https://저희결혼합니다.com',
+                    mobileWebUrl: 'https://아들장가갑니다.com',
                 },
             },
         ],
