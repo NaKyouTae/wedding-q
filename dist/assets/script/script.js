@@ -128,6 +128,8 @@ $(document).ready(function() {
 
 // copy
 function onCopy(text) {
+    const userAgent = navigator.userAgent;
+
     if (/iPhone|iPad|iPod/i.test(userAgent)) {
         navigator.clipboard.writeText(text).then(() => {
             var $toast = $('#toast');
