@@ -130,19 +130,19 @@ $(document).ready(function() {
 function onCopy(text) {
     const userAgent = navigator.userAgent;
 
-    if (/iPhone|iPad|iPod/i.test(userAgent)) {
-        navigator.clipboard.writeText(text).then(() => {
-            var $toast = $('#toast');
+    navigator.clipboard.writeText(text).then(() => {
+        var $toast = $('#toast');
 
-            if(!$toast.hasClass('active')) {
+        if (/iPhone|iPad|iPod/i.test(userAgent)) {
+            if (!$toast.hasClass('active')) {
                 $toast.addClass('active');
             }
+        }
 
-            setTimeout(() => {
-                $toast.removeClass('active');
-            }, 1500);
-        });
-    }
+        setTimeout(() => {
+            $toast.removeClass('active');
+        }, 1500);
+    });
 }
 
 // call
