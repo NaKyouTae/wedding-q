@@ -128,17 +128,19 @@ $(document).ready(function() {
 
 // copy
 function onCopy(text) {
-    navigator.clipboard.writeText(text).then(() => {
-        var $toast = $('#toast');
+    if (/iPhone|iPad|iPod/i.test(userAgent)) {
+        navigator.clipboard.writeText(text).then(() => {
+            var $toast = $('#toast');
 
-        if(!$toast.hasClass('active')) {
-            $toast.addClass('active');
-        }
+            if(!$toast.hasClass('active')) {
+                $toast.addClass('active');
+            }
 
-        setTimeout(() => {
-            $toast.removeClass('active');
-        }, 1500);
-    });
+            setTimeout(() => {
+                $toast.removeClass('active');
+            }, 1500);
+        });
+    }
 }
 
 // call
@@ -148,7 +150,17 @@ function onCall(number) {
 
 // massage
 function sendSms(number) {
-    window.open(`sms:${number}&body=`)
+    const userAgent = navigator.userAgent;
+
+    if (/iPhone|iPad|iPod/i.test(userAgent)) {
+        console.log("iOS 디바이스입니다.");
+        // iOS 디바이스에 대한 코드를 여기에 작성
+        window.open(`sms:${number}&body=`)
+    } else {
+        console.log("다른 유형의 디바이스입니다.");
+        // 기타 디바이스에 대한 처리를 여기에 작성
+        window.open(`sms:${number}?body=`)
+    }
 }
 
 // naver map, tmap
@@ -161,7 +173,7 @@ function onShareKakao() {
         objectType: 'feed',
         content: {
             title: '나규태 ♡ 최보영 결혼합니다.',
-            imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wedding-9b3cb.appspot.com/o/parent_thumbnail02.png?alt=media&token=9bb604be-33c2-4ca3-b8ef-dc238ec73a8f', // 메인 이미지
+            imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wedding-9b3cb.appspot.com/o/parent_thumbnail01.png?alt=media&token=9bb604be-33c2-4ca3-b8ef-dc238ec73a8f', // 메인 이미지
             description: '5/18(토) 13:20 루이비스 중구',
             link: {
                 mobileWebUrl: 'https://아들장가갑니다.com',
